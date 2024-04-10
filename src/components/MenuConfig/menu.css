@@ -19,9 +19,10 @@
     position: absolute;
     top: 50px;
     right: 0;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 4px;
     padding: 10px;
+    border: 1px solid  rgb(170, 0, 0);
   }
   
   .menu-fechado {
@@ -29,10 +30,20 @@
   }
   
   .menu-aberto li {
-    margin-bottom: 10px;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
   }
   
-  .menu-aberto li a {
+  .menu-aberto  li a {
     color: #000;
     text-decoration: none;
+    margin: 10px;
   }
+ .menu-aberto li a:hover{
+   color: rgb(161, 194, 199);
+ }
+ .menu-icons{
+  width: 20px;
+  font-size: 20px;
+ }

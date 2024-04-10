@@ -1,8 +1,8 @@
 import React from "react";
 import './header.css'
 import SearchBar from "../SearchBar/searchbar";
-import NaveMenu from "../Menu/menu";
-
+import NaveMenu from "../MenuConfig/menu";
+import NavHeader from "../navHeader/navHeader";
 export default function Header(){
     return(
         <div className="header-container">
@@ -14,8 +14,11 @@ export default function Header(){
                     <h1 className="me">Me</h1>
                     </div>
             </div>
+            <div className="separadores">
             <SearchBar/>
             <NaveMenu/>
+            </div>
+            <NavHeader/>
         </div>
     )
 }
