@@ -1,0 +1,53 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.header-container{
+    width: 100%;
+    border-bottom: 3px solid rgb(170, 0, 0);
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #2c2c2c;
+}
+.header-main{
+    width: 15%;
+    height: 10vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-stroke: pink;
+    
+}
+
+.small{
+    color: rgb(170, 0, 0);
+    margin: 10px 0 ;
+}
+
+.market{
+    color: rgb(0, 0, 0);
+}
+
+.two{
+    color: rgb(170, 0, 0);
+    margin: 10px 0 ;
+}
+
+.me{
+    color: rgb(0, 0, 0);
+}
+h1 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(211, 214, 216);
+  }

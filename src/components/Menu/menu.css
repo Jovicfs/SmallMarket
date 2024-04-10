@@ -1,0 +1,38 @@
+.nave-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .menu-toggle {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .menu-aberto {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .menu-fechado {
+    display: none;
+  }
+  
+  .menu-aberto li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-aberto li a {
+    color: #000;
+    text-decoration: none;
+  }
