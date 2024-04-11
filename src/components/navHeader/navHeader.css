@@ -20,9 +20,18 @@
     text-decoration: none;
     color: white;
     letter-spacing: 2px;
-  
+  font-size: 14px;
 }
 
 .section-nav ul li a:hover{
-    color: red;
+    color: rgb(8, 95, 226);
+    border-bottom: 1px solid azure;
+}
+.icon-nav{
+ position: absolute;
+ font-size: 20px;
+}
+.cfg-btn{
+    position: absolute;
+    right: 0px;
 }

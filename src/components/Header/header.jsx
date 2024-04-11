@@ -1,4 +1,3 @@
-import React from "react";
 import './header.css'
 import SearchBar from "../SearchBar/searchbar";
 import NaveMenu from "../MenuConfig/menu";
@@ -14,11 +13,15 @@ export default function Header(){
                     <h1 className="me">Me</h1>
                     </div>
             </div>
-            <div className="separadores">
+            <div className="serach-bar">
             <SearchBar/>
+            </div>
+            <div className="cfg-btn">
             <NaveMenu/>
             </div>
+            <div className="separadores">
             <NavHeader/>
+            </div>
         </div>
     )
 }
