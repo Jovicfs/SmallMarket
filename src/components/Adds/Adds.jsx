@@ -1,25 +1,33 @@
-import react,{useState} from 'react';
-import { FaChevronLeft } from "react-icons/fa";
-import { FaChevronRight } from "react-icons/fa";
-import './Adds.css'
+import React, { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import B1 from '../../image/B1.png';
+import B2 from '../../image/B2.png';
+import B3 from '../../image/B3.png';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import './Adds.css';
 
 export default function Adds(){
-    return(
-        <div className="publish">
-         <button type="button" className='button-left'>
-         <FaChevronLeft/>
-         </button>
-             <img src='' alt="add"  />
-         <button type="button" className='button-right'>
-         <FaChevronRight/>
-         </button>
-         <div className="count">
-            <ul>
-                <li><a href="#"></a>0</li>
-                <li><a href="#"></a>0</li>
-                <li><a href="#"></a>0</li>
-            </ul>
-         </div>
-        </div>
-    )
+  const data = [
+    { id: '1', image: B1 },
+    { id: '2', image: B2 },
+    { id: '3', image: B3 },
+  ];
+
+  return (
+    <div className="publish">
+      <Swiper
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+        navigation 
+      >
+        {data.map((item) => (
+          <SwiperSlide key={item.id}>
+            <img src={item.image} alt="Slider" className="slide-item" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
 }
