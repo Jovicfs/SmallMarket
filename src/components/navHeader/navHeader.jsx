@@ -1,6 +1,10 @@
 import React,{useState} from "react";
 import './navHeader.css'
+<<<<<<< HEAD
 
+=======
+import { IoMdCart } from "react-icons/io";
+>>>>>>> main
  export default function NavHeader(){
     return(
         <div className="container">
@@ -14,6 +18,17 @@ import './navHeader.css'
                     <li><a href="#">Vender</a></li>
                 </ul>
             </div>
+<<<<<<< HEAD
+=======
+            <div className="section-nav">
+                <ul>
+                    <li><a href="#">Cadastre-se</a></li>
+                    <li><a href="@">Entre</a></li>
+                    <li><a href="@">Compras</a></li>
+                    <li><a href="@"><IoMdCart className="icon-nav"/></a></li>
+                </ul>
+            </div>
+>>>>>>> main
         </div>
     )
  }
