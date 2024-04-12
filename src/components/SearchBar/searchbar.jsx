@@ -1,7 +1,5 @@
 import React from "react";
-
 import './searchbar.css'
-
 import { FaSearch } from "react-icons/fa";
 import {useState} from "react";
 
@@ -16,7 +14,8 @@ export default function SearchBar(){
 
     return(
         <div className="search-bar">
-        <input
+          <form action="submit">
+          <input
           type="text"
           placeholder="Pesquisar..."
           value={termoPesquisa}
@@ -25,6 +24,7 @@ export default function SearchBar(){
         <button type="submit">
           <FaSearch/>
         </button>
+          </form>
       </div>
     );
 }
