@@ -35,3 +35,16 @@
     position: absolute;
     right: 0px;
 }
+.categorias{
+    background: none;
+    border: 1px solid #2c2c2c;
+    border: 1px solid none;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+  font-size: 14px;
+}
+.categorias:hover{
+    color: rgb(8, 95, 226);
+    border-bottom: 1px solid azure;
+}

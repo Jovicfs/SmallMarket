@@ -3,9 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import B1 from '../../image/B1.png';
 import B2 from '../../image/B2.png';
 import B3 from '../../image/B3.png';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import './Adds.css';
 
 export default function Adds(){

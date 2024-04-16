@@ -1,0 +1,46 @@
+.Pcontainer{
+    width: 80%;
+    height: 350px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 3px solid rgb(179, 179, 182);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.swiper-container{
+    display: flex;
+    justify-content: center;
+    width: 90%; 
+    height: 310px;
+}
+.product-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.product-card img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#button{
+    position: absolute;
+    padding: 0 -20px;
+    background: none;
+    border: none;
+    overflow: visible ;
+}  

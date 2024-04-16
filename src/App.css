@@ -1,5 +1,18 @@
-.container{
-  display: flex;
-  flex-flow: column wrap;
+.Appcontainer{
   width: 100%;
+  display: flex;
+  flex-direction: column;
+ 
+  position: relative;
+}
+.products-section{
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.products-section h1{
+   margin-left: 100px;
 }
