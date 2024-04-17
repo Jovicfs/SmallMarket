@@ -40,6 +40,10 @@ export default function Products(){
             } className='swiper-container'
              slidesPerView = {6}
              pagination = {{clickable: true}}
+             autoplay={{
+              delay: 7000,
+              disableOnInteraction: false
+          }}
              loop = {true}
              navigation =
              {{

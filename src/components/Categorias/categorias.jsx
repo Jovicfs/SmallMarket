@@ -35,7 +35,7 @@ export default function Categorias(){
                </li>
                 <li className="item-lista">
                     <div className="grid">    
-                    <a className="drop-menu-a" href="@@">Máquinas de costura</a>
+                    <a className="drop-menu-a" href="@@">Diversos</a>
                     </div>
                </li>
               

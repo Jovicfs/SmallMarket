@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header/header'
 import Adds from './components/Adds/Adds'
 import Products from './components/Products/Products'
+import Footer from './components/Footer/Footer'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -21,6 +22,7 @@ function App() {
      <div className="products-section">
       <h1> Para Você 🫵</h1>
       <Products/>
+      <Footer/>
     </div>
    </div>
   )

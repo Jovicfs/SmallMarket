@@ -17,6 +17,10 @@ export default function Adds(){
       <Swiper
         slidesPerView={1}
         pagination={{ clickable: true }}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false
+      }}
         navigation 
       >
         {data.map((item) => (
