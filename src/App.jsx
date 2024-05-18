@@ -4,12 +4,14 @@ import Header from './components/Header/header'
 import Adds from './components/Adds/Adds'
 import Products from './components/Products/Products'
 import Footer from './components/Footer/Footer'
+
 function App() {
   const [count, setCount] = useState(0)
 
   return ( 
    <div className="Appcontainer"> 
-     <Header/>
+     <Header>
+     </Header>
      <Adds/>
      <div className="products-section">
       <h1>Novidades da Semana 📅</h1>

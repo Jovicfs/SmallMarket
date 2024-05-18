@@ -5,7 +5,7 @@ import './Products.css';
 export default function Products(){
     
   
-     const  [products,setProducts] = useState([
+     const  [products] = useState([
         { id: 1, name: 'product-name', image:'url'},
         { id: 2, name: 'product-name', image:'url'},
         { id: 3, name: 'product-name', image:'url'},
