@@ -3,20 +3,23 @@
     height: 350px;
     display: flex;
     margin: 0 auto;
-
     flex-direction: column;
     justify-content: center;
-  
     border-radius: 15px;
     overflow: hidden;
 }
+
 .swiper-container{
     display: flex;
     justify-content: center;
     width: 90%; 
+    overflow: hidden;
     height: 310px;
+    margin: 10px;
 }
+
 .product-card{
+    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,10 +27,11 @@
     text-align: justify;
     width: 200px;
     height: 300px;
-    margin: 0 auto;
-    border: 1px solid black;
+    margin: 0 20px;
+    border: 2px solid black;
     border-radius: 10px;
 }
+
 .product-card img{
     display: flex;
     justify-content: center;
@@ -44,5 +48,59 @@
     padding: 0 -20px;
     background: none;
     border: none;
-    overflow: visible ;
-}  
+    overflow: visible;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .Pcontainer{
+        width: 90%;
+        height: auto;
+    }
+
+    .swiper-container{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .product-card{
+        width: 180px;
+        height: 280px;
+        margin: 10px 0;
+    }
+
+    .product-card img{
+        height: 180px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .Pcontainer{
+        width: 95%;
+        height: auto;
+    }
+
+    .swiper-container{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .product-card{
+        width: 160px;
+        height: 250px;
+        margin: 10px 0;
+    }
+
+    .product-card img{
+        height: 150px;
+    }
+
+    #button{
+        font-size: 14px;
+    }
+}
