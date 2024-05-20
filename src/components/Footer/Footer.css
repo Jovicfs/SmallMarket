@@ -1,14 +1,13 @@
-.container-footer{
+.container-footer {
     width: 100%;
     height: 30vh;
-    flex-flow: block wrap;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 100px;
-
 }
-.section{
+
+.section {
     width: 25%;
     height: 240px;
     text-align: center;
@@ -17,25 +16,25 @@
     position: relative;
     color: black;
 }
-.section  h1{
+
+.section h1 {
     margin: 0 auto;
     font-size: 27px;
     color: rgb(17, 17, 17);
     margin-top: 20px;
     font-family: "Bangers", system-ui;
 }
-.footer-image{
-  font-size: 100px;
-  position: absolute;
-  bottom: 0;
-  left: 40%;
+
+.footer-image {
+    font-size: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
 }
 
-
-
-.section p{
+.section p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: justify;
-     margin: 20px;
-     font-size: 18px;
+    margin: 20px;
+    font-size: 18px;
 }

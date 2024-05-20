@@ -1,12 +1,42 @@
-
-.publish{
-    width: 100%;
+publish {
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.slide-item{
+  }
+  
+  .swiper-container {
     width: 100%;
-    max-height: 700px;
-    object-fit:   cover;
-}
+  }
+  
+  .slide-item {
+    width: 100%;
+    max-height: 53vh;
+    object-fit: cover;
+  }
+  
+  /* Media Queries para Design Responsivo */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .publish {
+      width: 100%;
+      padding: 0 10px;
+    }
+  
+    .slide-item {
+      max-height: 50vh;
+    }
+  }
+  
+  /* Celulares */
+  @media (max-width: 480px) {
+    .publish {
+      width: 100%;
+      padding: 0 5px;
+    }
+  
+    .slide-item {
+      max-height: 45vh;
+    }
+  }

@@ -1,106 +1,98 @@
-.Pcontainer{
-    width: 80%;
-    height: 350px;
-    display: flex;
+.Pcontainer {
+    width: 85%;
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     border-radius: 15px;
     overflow: hidden;
-}
-
-.swiper-container{
+    border: 1px solid #f3f1f1;
+  }
+  
+  .swiper-container {
     display: flex;
-    justify-content: center;
-    width: 90%; 
-    overflow: hidden;
-    height: 310px;
-    margin: 10px;
-}
-
-.product-card{
-    background-color: red;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .swiper-button-prev, .swiper-button-next {
+    color: rgb(182, 185, 187);
+    font-weight: 900;
+    background: none;
+    border: none;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  .product-card {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: justify;
-    width: 200px;
-    height: 300px;
-    margin: 0 20px;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-.product-card img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    height: 200px;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px;
+    height: auto;
+    border: 2px solid rgb(204, 202, 202);
+    border-radius: 5px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(156, 156, 156);
+    border-radius: 5px;
     object-fit: cover;
-}
-
-#button{
-    color: black;
-    font-weight: 900;
-    position: absolute;
-    padding: 0 -20px;
-    background: none;
-    border: none;
-    overflow: visible;
-}
-
-/* Media Queries for Responsive Design */
-
-/* Tablets */
-@media (max-width: 768px) {
-    .Pcontainer{
-        width: 90%;
-        height: auto;
+  }
+  
+  /* Media Queries para Design Responsivo */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .Pcontainer {
+      width: 90%;
     }
-
-    .swiper-container{
-        width: 100%;
-        height: auto;
-        flex-direction: column;
+  
+    .swiper-button-prev, .swiper-button-next {
+      display: none;
     }
-
-    .product-card{
-        width: 180px;
-        height: 280px;
-        margin: 10px 0;
+  
+    .swiper-container {
+      width: 100%;
     }
-
-    .product-card img{
-        height: 180px;
+  
+    .product-card {
+      width: 180px;
+      height: 280px;
+      margin: 10px 0;
     }
-}
-
-/* Mobile Phones */
-@media (max-width: 480px) {
-    .Pcontainer{
-        width: 95%;
-        height: auto;
+  
+    .product-card img {
+      height: 180px;
     }
-
-    .swiper-container{
-        width: 100%;
-        height: auto;
-        flex-direction: column;
+  }
+  
+  /* Celulares */
+  @media (max-width: 480px) {
+    .Pcontainer {
+      width: 95%;
     }
-
-    .product-card{
-        width: 160px;
-        height: 250px;
-        margin: 10px 0;
+  
+    .swiper-container {
+      width: 100%;
     }
-
-    .product-card img{
-        height: 150px;
+  
+    .product-card {
+      width: 160px;
+      height: 250px;
+      margin: 10px 0;
     }
-
-    #button{
-        font-size: 14px;
+  
+    .product-card img {
+      height: 150px;
     }
-}
+  }
+  
