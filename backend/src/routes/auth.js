@@ -1,6 +1,9 @@
+// backend/src/routes/auth.js
+const express = require('express');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const User = require('../database/models/users');
+const router = express.Router();
 
 const register = async (req, res) => {
     try {
@@ -31,4 +34,7 @@ const login = async (req, res) => {
     }
 };
 
-module.exports = { register, login };
+router.post('/register', register);
+router.post('/login', login);
+
+module.exports = router;
