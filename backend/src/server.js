@@ -1,11 +1,11 @@
-// backend/src/server.js
+require('dotenv').config(); 
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/user');
-const productRoutes = require('./routes/product'); // Verifique se o nome do arquivo está correto, deve ser singular 'product.js'
+const productRoutes = require('./routes/product');
 const cartRoutes = require('./routes/cart');
 
 const app = express();
@@ -22,7 +22,7 @@ app.use('/api/products', productRoutes);
 app.use('/api/cart', cartRoutes);
 
 // Conectar ao MongoDB
-mongoose.connect('mongodb://localhost:27017/yourdbname', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_DB, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB conectado!'))
     .catch(err => console.log(err));
 
