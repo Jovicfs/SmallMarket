@@ -27,8 +27,8 @@ export default function Products() {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      if (width <= 480) {
-        setSlidesPerView(1);
+      if (width <= 480) {  
+        setSlidesPerView(1); 
       } else if (width <= 768) {
         setSlidesPerView(2);
       } else {
@@ -56,13 +56,13 @@ export default function Products() {
 
   return (
     <div className="Pcontainer">
-      <Swiper
+      <Swiper 
         ref={swiperRef}
-        style={{
+        style={{ 
           "--swiper-pagination-color": "blue",
           "padding": "25px 0",
           "--swiper-pagination-bullet-horizontal-gap": "3px"
-        }}
+        }} 
         className="swiper-container"
         slidesPerView={slidesPerView}
         spaceBetween={20}

@@ -1,9 +1,11 @@
+
 .container{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    position: relative
 }
 
 .section-nav ul{

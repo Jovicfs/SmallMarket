@@ -2,8 +2,9 @@
   width: 100%;
   display: flex;
   flex-direction: column;
- 
+   background-color: #070707;
   position: relative;
+  color: white;
 }
 .products-section{
   flex-direction: column;

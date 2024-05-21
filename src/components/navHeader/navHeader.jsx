@@ -12,7 +12,7 @@ export default function NavHeader() {
   };
 
   return (
-    <div className="container">
+<div className="container">
       <div className="section-nav">
         <ul>
           <li>
@@ -57,5 +57,6 @@ export default function NavHeader() {
         </ul>
       </div>
     </div>
+    
   );
 }

@@ -5,36 +5,6 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 100px;
+    background-color:#080808;
 }
 
-.section {
-    width: 25%;
-    height: 240px;
-    text-align: center;
-    margin: 30px;
-    background-color: #ffffff;
-    position: relative;
-    color: black;
-}
-
-.section h1 {
-    margin: 0 auto;
-    font-size: 27px;
-    color: rgb(17, 17, 17);
-    margin-top: 20px;
-    font-family: "Bangers", system-ui;
-}
-
-.footer-image {
-    font-size: 100px;
-    position: absolute;
-    bottom: 0;
-    left: 40%;
-}
-
-.section p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: justify;
-    margin: 20px;
-    font-size: 18px;
-}
