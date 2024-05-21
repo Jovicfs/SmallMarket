@@ -28,6 +28,7 @@ export default function Adds() {
         navigation
         modules={[Navigation, Pagination, Autoplay]}
       >
+        
         {data.map((item) => (
           <SwiperSlide key={item.id}>
             <img src={item.image} alt="Slider" className="slide-item" />

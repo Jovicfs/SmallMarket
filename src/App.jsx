@@ -14,15 +14,15 @@ function App() {
      </Header>
      <Adds/>
      <div className="products-section">
-      <h1>Novidades da Semana 📅</h1>
+      <h1>Novidades</h1>
       <Products/>
     </div>
      <div className="products-section">
-      <h1> Em Oferta 💸</h1>
+      <h1> Em Oferta</h1>
       <Products/>
     </div>
      <div className="products-section">
-      <h1> Para Você 🫵</h1>
+      <h1> Para Você </h1>
       <Products/>
       <Footer/>
     </div>

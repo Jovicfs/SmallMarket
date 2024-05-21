@@ -1,7 +1,3 @@
-
-
-
-
 import { useState } from 'react'; 
 import { IoPersonCircle } from "react-icons/io5";
 import { IoMdHelpCircle } from "react-icons/io";
@@ -21,7 +17,6 @@ export default function NaveMenu(){
             </button>
             <ul className={menuAberto ? 'menu-aberto' : 'menu-fechado'}>
               <li>
-                
               <MdCreate className='menu-icons'/> 
                 <a href='./'>Alterar Pedido e cancelar compras</a></li>
               <li>
@@ -36,14 +31,6 @@ export default function NaveMenu(){
             </ul>
           </div>
         )};
-
-
-
-
-
-
-
-
 
 
 

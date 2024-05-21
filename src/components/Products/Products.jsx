@@ -31,7 +31,8 @@ export default function Products() {
         setSlidesPerView(1); 
       } else if (width <= 768) {
         setSlidesPerView(2);
-      } else {
+      }
+      else if(width >= 1024){
         setSlidesPerView(6);
       }
     };
@@ -90,8 +91,10 @@ export default function Products() {
             </div>
           </SwiperSlide>
         ))}
+        <div className="position-buttons">
         <div className="swiper-button-prev" onClick={prevSlide}></div>
         <div className="swiper-button-next" onClick={nextSlide}></div>
+        </div>
       </Swiper>
     </div>
   );
