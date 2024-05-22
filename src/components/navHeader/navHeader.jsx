@@ -1,8 +1,9 @@
-import React from "react";
-import './navHeader.css'
-import { IoMdCart } from "react-icons/io";
-import { IoIosArrowDown } from "react-icons/io";
-import Categorias from "../Categorias/categorias";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './navHeader.css';
+import { IoMdCart } from 'react-icons/io';
+import { IoIosArrowDown } from 'react-icons/io';
+import Categorias from '../Categorias/categorias';
 
 export default function NavHeader() {
   const [menuAberto, setMenuAberto] = React.useState(false);
@@ -12,51 +13,50 @@ export default function NavHeader() {
   };
 
   return (
-<div className="container">
+    <div className="container">
       <div className="section-nav">
         <ul>
           <li>
-            <button className="categorias"   onClick={handleMenuToggle}>
+            <button className="categorias" onClick={handleMenuToggle}>
               Categorias<IoIosArrowDown color="white" />
             </button>
           </li>
           {menuAberto && <Categorias />}
           <li>
-            <a href="@">Ofertas</a>
+            <Link to="/offers">Ofertas</Link>
           </li>
           <li>
-            <a href="#">Novidades</a>
+            <Link to="/news">Novidades</Link>
           </li>
           <li>
-            <a href="#">Roupas</a>
+            <Link to="/clothing">Roupas</Link>
           </li>
           <li>
-            <a href="#">Informática</a>
+            <Link to="/informatics">Informática</Link>
           </li>
           <li>
-            <a href="#">Vender</a>
+            <Link to="/sell">Vender</Link>
           </li>
         </ul>
       </div>
       <div className="section-nav">
         <ul>
           <li>
-            <a href="#">Cadastre-se</a>
+            <Link to="/register">Cadastre-se</Link>
           </li>
           <li>
-            <a href="@">Entre</a>
+            <Link to="/login">Entre</Link>
           </li>
           <li>
-            <a href="@">Compras</a>
+            <Link to="/purchases">Compras</Link>
           </li>
           <li>
-            <a href="@">
+            <Link to="/cart">
               <IoMdCart className="icon-nav" />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
     </div>
-    
   );
 }

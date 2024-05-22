@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import api from '../../api';
+import './login.css';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -20,25 +21,29 @@ const Login = () => {
     };
 
     return (
-        <div>
-            <h2>Login</h2>
-            <form onSubmit={handleLogin}>
-                <input
-                    type="email"
-                    placeholder="Email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-                <input
-                    type="password"
-                    placeholder="Senha"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                />
-                <button type="submit">Login</button>
-            </form>
-            {error && <p>{error}</p>}
-            {token && <p>Token: {token}</p>}
+        <div id="login-container">
+            <div id="form-container" className="login-form">
+                <h2>Login</h2>
+                <form id="login-form" className='form-group' onSubmit={handleLogin}>
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        className="input-field"
+                    />
+                    <input
+                        type="password"
+                        placeholder="Senha"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        className="input-field"
+                    />
+                    <button type="submit" className="login-button">Login</button>
+                </form>
+                {error && <p className="error-message">{error}</p>}
+                {token && <p>Token: {token}</p>}
+            </div>
         </div>
     );
 };
